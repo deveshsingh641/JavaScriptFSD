@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case Example</title>
+    
+</head>
+<body>
+    <h1>Switch Case in JavaScript</h1>
+    <p>Enter a number (1–7) to get the corresponding day of the week:</p>
+
+   
+    <input type="number" id="dayInput" min="1" max="7" placeholder="Enter number (1-7)">
+   
+
+   
+    <div id="result"></div>
+
+    <script>
+       
+        function getDayOfWeek() {
+            
+            let dayNumber = document.getElementById('dayInput').value;
+
+    
+            dayNumber = parseInt(dayNumber);
+
+            let dayName;
+
+            
+            switch (dayNumber) {
+                case 1:
+                    dayName = "Sunday";
+                    break;
+                case 2:
+                    dayName = "Monday";
+                    break;
+                case 3:
+                    dayName = "Tuesday";
+                    break;
+                case 4:
+                    dayName = "Wednesday";
+                    break;
+                case 5:
+                    dayName = "Thursday";
+                    break;
+                case 6:
+                    dayName = "Friday";
+                    break;
+                case 7:
+                    dayName = "Saturday";
+                    break;
+                default:
+                    dayName = "Invalid number! Please enter a number between 1 and 7.";
+            }
+
+        
+            document.getElementById('result').innerText = dayName;
+        }
+    </script>
+</body>
+</html>
