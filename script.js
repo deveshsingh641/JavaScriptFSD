@@ -113,11 +113,94 @@
 
 
 
-var retVal = prompt("Enter your name:", "devesh");
-alert("You have entered: " + retVal);
+// var retVal = prompt("Enter your name:", "devesh");
+// alert("You have entered: " + retVal);
 
-var name = prompt("Enter your name:", "name");
-document.write("<h2>Hello " + name + "</h2>");
+// var name = prompt("Enter your name:", "name");
+// document.write("<h2>Hello " + name + "</h2>");
+
+
+// var question="What is 10 +10";
+
+// var answer = 20 ;
+
+// var correct='<img src="https://img.freepik.com/free-photo/view-3d-house-model_23-2150761014.jpg" height = " 150 " width = "250">';
+
+// var incorrect='<img src="https://img.freepik.com/free-photo/giraffes-neon-lights_23-2151726162.jpg" height ="150" prime prime width ="250 "';
+
+// var response=prompt(question,"0");
+
+// for(count=0;count<3;count++)
+
+// {
+
+// if (response!=answer)
+
+// {
+
+// confirm("Wrong, Press OK for another chance");
+
+// response-prompt(question, "0");
+
+// if(count==1)
+
+// {
+
+// alert("Better luck next time");
+
+// }
+
+// }
+
+// else
+
+// {
+
+// alert("Great!! you are right");
+
+// count = 3 ;
+
+// }
+
+// }
+
+// var output=(response-answer)?correct:incorrect;
+
+// document.write("</BR>");
+
+// document.write(output);
+
+
+// function Redirect(){
+//     window.location ="https://github.com/";
+// }
+
+// document.write("you will be redirected to the main page in 10 sec.");
+
+// setTimeout('Redirect()',1000);
+
+// document.addressform.yourname.value
+// document.addressform.phone.value
+// document.addressform.email.value
+
+
+// function validateForm(){
+//     var x =document.forms["myForm"]["frame"].value;
+//     if (x==null || x=="")
+//     {
+//         alert("First name must be filled out");
+//         return false;
+//     }
+
+// }
+
+// function validateForm(){
+//     var x= document.forms["myForm"]["email"].value;
+//     var atpos=x.indexOf("@");
+//     var dot.pos=x.lastIndexOf(".")
+// }
+
+
 
 
 

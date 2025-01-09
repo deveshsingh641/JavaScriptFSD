@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Long Date Format</title>
+</head>
+<body>
+  <p id="longDate"></p> <!-- This is where the date will appear -->
+
+  <script>
+        const currentDate = new Date();
+        const isoDate = currentDate.toISOString();
+        document.getElementById("isoDate").textContent = isoDate;
+
+
+
+
+// const date = new Date();
+
+
+// const longDate = date.toLocaleDateString("en-US", {
+//   weekday: "long", 
+//   year: "numeric",
+//   month: "long",   
+//   day: "numeric"   
+// });
+
+
+// document.getElementById("longDate").textContent = longDate;
+
+
+  </script>
+</body>
+</html>
