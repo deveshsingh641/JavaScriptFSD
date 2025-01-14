@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression Examples</title>
+</head>
+<body>
+
+    <h1>Regular Expression Examples in JavaScript</h1>
+
+    <h2>1. Matching a Simple Pattern</h2>
+    <p id="match-simple"></p>
+
+    <h2>2. Case-Insensitive Match</h2>
+    <p id="case-insensitive"></p>
+
+    <h2>3. Extracting All Numbers in a String</h2>
+    <p id="extract-numbers"></p>
+
+    <h2>4. Replacing Text</h2>
+    <p id="replace-text"></p>
+
+    <h2>5. Validating an Email Address</h2>
+    <p id="email-validation"></p>
+
+    <h2>6. Extracting Specific Groups (Using Parentheses)</h2>
+    <p id="extract-groups"></p>
+
+    <h2>7. Testing a String for a Pattern</h2>
+    <p id="test-pattern"></p>
+
+    <h2>8. Match Only Whole Words</h2>
+    <p id="whole-words"></p>
+
+    <h2>9. Validating a Phone Number</h2>
+    <p id="phone-validation"></p>
+
+    <script>
+        const regex1 = /\d+/;
+        const str1 = "I have 2 apples and 3 oranges";
+        const result1 = str1.match(regex1);
+        document.getElementById("match-simple").textContent = `Result: ${result1}`;
+
+        const regex2 = /hello/i;
+        const str2 = "Hello World!";
+        const result2 = regex2.test(str2);
+        document.getElementById("case-insensitive").textContent = `Match found: ${result2}`;
+
+        const regex3 = /\d+/g;
+        const str3 = "The prices are 200, 150, and 300 dollars.";
+        const result3 = str3.match(regex3);
+        document.getElementById("extract-numbers").textContent = `Numbers: ${result3}`;
+
+        const regex4 = /\d+/g;
+        const str4 = "My phone number is 1234567890.";
+        const result4 = str4.replace(regex4, "*");
+        document.getElementById("replace-text").textContent = `Replaced: ${result4}`;
+
+        const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        const email = "example@domain.com";
+        const isValidEmail = emailRegex.test(email);
+        document.getElementById("email-validation").textContent = `Email valid: ${isValidEmail}`;
+
+        const dateRegex = /^(\d{2})\/(\d{2})\/(\d{4})$/;
+        const date = "14/01/2025";
+        const result6 = date.match(dateRegex);
+        document.getElementById("extract-groups").textContent = `Day: ${result6[1]}, Month: ${result6[2]}, Year: ${result6[3]}`;
+
+        const regex7 = /^[A-Z]/;
+        const str7 = "Hello world!";
+        const result7 = regex7.test(str7);
+        document.getElementById("test-pattern").textContent = `Starts with uppercase: ${result7}`;
+
+        const regex8 = /\bapple\b/;
+        const str8 = "I like apple and apple pie.";
+        const result8 = str8.match(regex8);
+        document.getElementById("whole-words").textContent = `Whole word match: ${result8}`;
+
+        const phoneRegex = /^\(\d{3}\) \d{3}-\d{4}$/;
+        const phoneNumber = "(123) 456-7890";
+        const isValidPhone = phoneRegex.test(phoneNumber);
+        document.getElementById("phone-validation").textContent = `Phone number valid: ${isValidPhone}`;
+    </script>
+
+</body>
+</html>
